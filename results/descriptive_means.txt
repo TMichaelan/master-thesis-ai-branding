@@ -1,0 +1,4 @@
+Mean attribute scores by brand origin
+       memorability  attractiveness  clarity
+AI             3.18            3.29     3.36
+Human          3.07            2.88     3.16

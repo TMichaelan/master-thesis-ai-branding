@@ -1,0 +1,9 @@
+Type                            Pair  AI_votes  Human_votes  N_total  AI_share  p_value
+Logo        Etiera vs Norse Projects        60           26       86     0.698   0.0003
+Name        Etiera vs Norse Projects        51           35       86     0.593   0.1052
+Logo              Verdura vs Seedlip        67           19       86     0.779   0.0000
+Name              Verdura vs Seedlip        57           29       86     0.663   0.0034
+Logo Ecotiva vs Groove Collaborative        60           26       86     0.698   0.0003
+Name Ecotiva vs Groove Collaborative        55           31       86     0.640   0.0127
+Logo               Seraphic vs Plaid        70           16       86     0.814   0.0000
+Name               Seraphic vs Plaid        63           23       86     0.733   0.0000

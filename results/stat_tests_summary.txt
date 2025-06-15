@@ -1,0 +1,45 @@
+   resp_id      brand origin  memorability  attractiveness  clarity  recommendation
+0        0    Ecotiva     AI             4               4        2               2
+1        0   Visioniq     AI             4               1        2               2
+2        0  Fidelicon     AI             4               5        4               2
+3        0   Seraphic     AI             4               5        4               2
+4        0     Etiera     AI             4               5        5               2 
+
+Cronbach’s α:
+• Memorability : 0.866
+• Attractiveness: 0.85
+• Clarity      : 0.797
+
+Welch t-tests (AI vs Human):
+• Memorability : t =  0.912   p =  0.3633
+• Attractiveness: t =  3.482   p =  0.0006
+• Clarity      : t =  2.047   p =  0.0422
+
+OLS regression (respondent level):
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:         recommendation   R-squared:                       0.100
+Model:                            OLS   Adj. R-squared:                  0.067
+Method:                 Least Squares   F-statistic:                     3.042
+Date:                Sun, 15 Jun 2025   Prob (F-statistic):             0.0335
+Time:                        23:50:05   Log-Likelihood:                -131.30
+No. Observations:                  86   AIC:                             270.6
+Df Residuals:                      82   BIC:                             280.4
+Df Model:                           3                                         
+Covariance Type:            nonrobust                                         
+==================================================================================
+                     coef    std err          t      P>|t|      [0.025      0.975]
+----------------------------------------------------------------------------------
+const              1.1099      0.716      1.550      0.125      -0.315       2.535
+memorability       0.4780      0.339      1.411      0.162      -0.196       1.152
+attractiveness     0.1064      0.375      0.284      0.777      -0.640       0.852
+clarity           -0.1001      0.375     -0.267      0.790      -0.847       0.647
+==============================================================================
+Omnibus:                        1.732   Durbin-Watson:                   1.822
+Prob(Omnibus):                  0.421   Jarque-Bera (JB):                1.333
+Skew:                           0.082   Prob(JB):                        0.514
+Kurtosis:                       2.413   Cond. No.                         35.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
