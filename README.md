@@ -1,21 +1,21 @@
 # AI vs Human Brand Name Survey Analysis
 
-This project analyzes survey data comparing AI-generated and human-created brand names. It calculates reliability, performs statistical tests, and visualizes results. All plots are saved in the `img/` directory.
+This project analyzes survey data comparing AI-generated and human-created brand names. It calculates reliability, performs statistical tests, and visualizes results. All plots and result files are saved in the `results/` directory.
 
 ## Project Structure
 
 ```
 .
 ├── data/
-│   └── data.csv              # Your survey data file
-├── img/                      # Output directory for plots
-├── src/
-│   ├── data_processing.py    # Data loading and transformation
-│   ├── analysis.py           # Statistical analysis functions
-│   └── visualization.py      # Plotting functions
-├── main.py                   # Main script to run the analysis
-├── requirements.txt          # Python dependencies
-└── README.md                 # Project description (this file)
+│   └── data.csv                # Your survey data file
+├── results/                    # Output directory for plots and result tables
+│   ├── *.png                   # Plots (histograms, barplots, etc.)
+│   ├── *.csv                   # Summary tables
+│   └── *.txt                   # Statistical test summaries
+├── analysis.py                 # Main analysis script
+├── requirements.txt            # Python dependencies
+├── AI_Brand_Analysis.ipynb     # Jupyter notebook (optional)
+└── README.md                   # Project description (this file)
 ```
 
 ## How to Use
@@ -30,29 +30,26 @@ This project analyzes survey data comparing AI-generated and human-created brand
    Place your survey CSV file as `data/data.csv`.
 
 3. **Run the analysis**  
+   You can run the main script:
    ```
-   python main.py
+   python analysis.py
    ```
+   or use the Jupyter notebook `AI_Brand_Analysis.ipynb` for step-by-step exploration.
+
    This will:
    - Prepare and clean the data
    - Calculate Cronbach’s alpha for reliability
    - Compare AI and human brand ratings (means, t-tests)
    - Run regression analysis
-   - Save all plots to the `img/` directory
+   - Save all plots and result tables to the `results/` directory
 
 ## Main Components
 
-- **src/data_processing.py**  
-  Loads the CSV, maps ratings to numbers, and reshapes the data for analysis.
+- **analysis.py**  
+  Loads the CSV, processes the data, runs all statistical analyses, and saves plots and tables to `results/`.
 
-- **src/analysis.py**  
-  Calculates reliability (Cronbach’s alpha), group means, t-tests, correlations, and runs a regression.
-
-- **src/visualization.py**  
-  Generates and saves plots: barplots, histograms, and correlation heatmaps.
-
-- **main.py**  
-  Orchestrates the workflow: loads data, runs analysis, and creates plots.
+- **AI_Brand_Analysis.ipynb**  
+  Jupyter notebook for interactive analysis and visualization (optional).
 
 ## Requirements
 
@@ -72,9 +69,9 @@ pip install -r requirements.txt
 
 ## Output
 
-All generated plots will be saved in the `img/` directory.
+All generated plots and result files will be saved in the `results/` directory.
 
 ---
 
 **Note:**  
-Make sure your data columns match the expected format (see `src/data_processing.py` for details).
+Make sure your data columns match the expected format (see code in `analysis.py` for details).
